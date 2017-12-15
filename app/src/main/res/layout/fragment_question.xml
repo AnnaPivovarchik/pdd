@@ -1,0 +1,79 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.anna.pdd.Question.QuestionFragment"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/questionImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/questionTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="4" />
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:gravity="fill_horizontal|center_vertical"
+        app:layout_constraintBottom_toTopOf="@id/answersLayout"
+        app:layout_constraintEnd_toStartOf="@id/buttonHelp"
+        app:layout_constraintHorizontal_weight="8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/questionImageView"
+        app:layout_constraintVertical_weight="2" />
+
+    <Button
+        android:id="@+id/buttonHelp"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:gravity="center"
+        android:layout_marginStart="16dp"
+        android:text="@string/help_button"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/questionTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="3"
+        app:layout_constraintStart_toEndOf="@id/questionTextView"
+        app:layout_constraintTop_toBottomOf="@id/questionImageView"
+        app:layout_constraintVertical_weight="1" />
+
+    <include
+        android:id="@+id/answersLayout"
+        layout="@layout/answers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/questionTextView"
+        app:layout_constraintVertical_weight="3" />
+
+    <Button
+        android:id="@+id/buttonAnswer"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/answer_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answersLayout"
+        app:layout_constraintVertical_weight="1"
+        tools:layout_editor_absoluteX="30dp" />
+
+</android.support.constraint.ConstraintLayout>

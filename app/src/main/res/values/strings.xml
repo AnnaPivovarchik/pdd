@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Билеты ПДД</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="select_ticket_button">Выбрать</string>
+    <string name="select_ticket_text_view">Выберите билет</string>
+    <string name="tickets_tab">Билеты</string>
+    <string name="results_tab">Результаты</string>
+    <string name="error_loading">Произошла ошибка сети</string>
+    <string name="retry">Повторить</string>
+    <string name="ticket">Билет %1$d</string>
+    <string name="result_text_view">Вы были правы в %1$d из %2$d вопросов</string>
+    <string name="ticket_id_text_view">Билет %1$d</string>
+    <string name="restart">Повторить</string>
+    <string name="help_button">Инфо</string>
+    <string name="question_id_header">Вопрос</string>
+    <string name="question_status_header">Ответ</string>
+    <string name="explanation">Пояснение</string>
+    <string name="ok">Ок</string>
+    <string name="answer_button">Ответить</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="title_activity_login">Вход</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Пароль</string>
+    <string name="action_sign_in">Вход</string>
+    <string name="action_sign_in_short">Вход</string>
+    <string name="error_invalid_email">Неправильный email</string>
+    <string name="error_invalid_password">Пароль слишком короткий</string>
+    <string name="error_incorrect_password">Неправильный пароль</string>
+    <string name="error_field_required">Это поле обязательное</string>
+    <string name="permission_rationale">"Доступ к контактам необходим для автозавершения email-a"
+    </string>
+</resources>
